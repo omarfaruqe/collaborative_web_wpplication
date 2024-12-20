@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card-text {
+    font-style: italic;
+  }
+  
+  h2 {
+    font-weight: bold;
+    color: #343a40;
+  }
+  
