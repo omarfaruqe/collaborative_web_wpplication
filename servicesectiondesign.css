@@ -1,0 +1,96 @@
+/* General Footer Styles */
+.custom-footer {
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text */
+  padding: 20px 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-top: 4px solid #f39c12; /* Optional accent border */
+}
+
+/* Footer Content */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Text */
+.footer-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Footer Links */
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-link {
+  color: #f39c12; /* Accent color for links */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #e67e22; /* Lighter shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .footer-link {
+    margin: 5px 0;
+  }
+}
+
+/* #student:7 --> style service section */
+
+/* General styling for the student service section */
+.student-service-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for each card */
+.student-service-card {
+  width: 300px;
+  background-color: #ffffff; 
+  border: 1px solid #ddd; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Card content styling */
+.student-service-card-content {
+  padding: 15px;
+}
+
+.student-service-card-content h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.student-service-card-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+.student-service-card-content a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
