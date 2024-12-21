@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collaborative Web Application</title>
-    <link href="styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <footer class="custom-footer">
-      <div class="footer-content">
-        <p class="footer-text">
-          © 2024 Your Company Name. All Rights Reserved.
-        </p>
-        <div class="footer-links">
-          <a href="#about" class="footer-link">About Us</a>
-          <a href="#contact" class="footer-link">Contact</a>
-          <a href="#privacy" class="footer-link">Privacy Policy</a>
-        </div>
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional: Add your custom CSS here -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Your HTML content goes here -->
+	<header>
+      <h1>Portfolio</h1>
+    </header>
+
+    <section id="portfolio">
+      <div id="filter-buttons">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="web">Web Development</button>
+        <button class="filter-btn" data-category="design">Design</button>
+        <button class="filter-btn" data-category="marketing">Marketing</button>
       </div>
-    </footer>
+      <div id="portfolio-items">
+        <div class="portfolio-item" data-category="web">Web Project 1</div>
+        <div class="portfolio-item" data-category="design">Design Project 1</div>
+        <div class="portfolio-item" data-category="web">Web Project 2</div>
+        <div class="portfolio-item" data-category="marketing">Marketing Project 1</div>
+        <div class="portfolio-item" data-category="design">Design Project 2</div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
+
+    <!-- Bootstrap JS and dependencies via CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Optional: Add your custom JS here -->
+    <script src="scripts.js"></script>
+</body>
 </html>
