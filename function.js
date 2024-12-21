@@ -32,3 +32,56 @@ function showCarousel(images) {
 
     document.body.appendChild(carouselContainer);
 }
+function showNotification(message, type = 'info', duration = 3000) {
+    
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.innerText = message;
+
+    
+    const styles = `
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .notification.info { background-color: #2196F3; }
+        .notification.success { background-color: #4CAF50; }
+        .notification.warning { background-color: #FFC107; }
+        .notification.error { background-color: #F44336; }
+        .notification.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    `;
+
+    
+    const styleSheet = document.createElement('style');
+    styleSheet.type = 'text/css';
+    styleSheet.innerText = styles;
+    document.head.appendChild(styleSheet);
+
+    
+    document.body.appendChild(notification);
+
+    
+    setTimeout(() => notification.classList.add('show'), 10);
+
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => notification.remove(), 300); 
+    }, duration);
+}
+
+
